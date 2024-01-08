@@ -16,7 +16,7 @@ h2 {
 header {
     display: flex;
     justify-content: space-between; /*wyrownaj lewo prawo*/
-    background-color: rgb(26,25,25);
+    background-color: rgb(26,25,25); /*aha*/
     max-width: 1240px;
     margin: auto;
 }
