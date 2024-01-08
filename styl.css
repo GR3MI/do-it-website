@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+}
+.logo {
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 0;
+    align-items: center;
+    justify-content: left;
+    height: 100px;
+}
+/* aby lewa i nav byly kolo siebie flex dla header*/
+h2 {
+    color: #fff;
+}
+header {
+    display: flex;
+    justify-content: space-between; /*wyrownaj lewo prawo*/
+    background-color: rgb(26,25,25);
+    max-width: 1240px;
+    margin: auto;
+}
+.lewa {
+    display: flex;
+}
+.napis{
+    margin-left: 50px;
+    padding: 0;
+    display: flex; /*nie ma kolumn bo jedno dziecko*/
+    align-items: center; /*wyrownaj gora dol*/
+}
+.nawigacja{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.link-item{
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    margin-right: 20px;
+}
+.link-item:hover{
+    color: #00dcfd;
+}
+@media screen and (max-width:600px){
+    header {
+        display: block; /* NIE MA FLEX WRACAM DO BLOCK*/
+    }
+    .nawigacja {
+        display: block;
+    }
+    .link-item {
+        margin: 10px 5px; /* goda_dol lewo_prawo*/
+    }
+}
+main {
+    max-width: 1240px;
+    margin: auto;
+    height: 500px;
+    background-image: url(iStock-1201405775.jpg);
+    background-position: top center;
+    align-items: center;
+    display: flex;
+}
+.ramka{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 60px;
+    box-shadow: 0 0 4px black;
+}
+.zawartosc{
+    font-size: 120%;
+    height: 80%;
+    width: 80%;
+    align-items: center;
+    color: #fff;
+}
+footer{
+    display: flex;
+    justify-content: space-between; /*wyrownaj lewo prawo*/
+    background-color: rgb(26,25,25);
+    max-width: 1240px;
+    margin: auto;
+    height: 100px;
+}
